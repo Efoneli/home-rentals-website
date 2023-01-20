@@ -1,5 +1,6 @@
 import logo1 from './assets/logo-1.png';
-import swimmingpool from './assets/swimmingpool.png';
+import LivingCost from './LivingCost.jsx';
+import Cards from './Cards.jsx';
 
 function App() {
   return (
@@ -24,20 +25,11 @@ function App() {
       </div>
       </div>
       </div>
-      <div className='bg-white'>
-        <h2 className='text-2xl font-bold mt-11 ml-11'>Minimum Living Cost Takes Care Of Everthing</h2>
-        <div>
-          <img src={ swimmingpool } alt='pool' />
-        </div>
-      </div>
+     
+      <LivingCost />
       <div>
-        <div className='flex justify-between mx-8 my-6'>
-          <h1 className='text-2xl font-bold'>List Of Properties</h1>
-          <button className='bg-orange-700 text-white text-sm rounded-sm px-3 py-2'>
-            View All Property
-          </button>
+        <Cards />
         </div>
-      </div>
     </div>
   );
 }
