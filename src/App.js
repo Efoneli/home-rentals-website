@@ -29,7 +29,7 @@ function App() {
       <LivingCost />
       <div>
         <Cards />
-        </div>
+      </div>
     </div>
   );
 }
