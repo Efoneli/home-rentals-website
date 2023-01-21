@@ -25,11 +25,8 @@ function App() {
       </div>
       </div>
       </div>
-     
       <LivingCost />
-      <div>
-        <Cards />
-      </div>
+      <Cards />
     </div>
   );
 }
