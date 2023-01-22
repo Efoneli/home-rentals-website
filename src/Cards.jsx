@@ -16,7 +16,7 @@ import arrangeBed from './assets/arrangeBed.png';
 
 
 
-function Cards(props) { 
+function Cards() { 
   return (
     <div className='mx-11'>
         <div className='flex justify-between my-6 '>
@@ -175,8 +175,8 @@ function Cards(props) {
           </div>
         </div>
 
-        <div className='flex'>
-          <div>
+        <div className='flex m-4'>
+        <div className='mr-4'>
           <div className='m-2 flex'>
             <img src={arrangeBed} alt='image' className='mr-3 mb-7' />
             <img src={happyMan} alt='image' className='mr-3 mt-7' />
@@ -186,7 +186,7 @@ function Cards(props) {
             <img src={friends} alt='image' className='mt-9' />
           </div>
           </div>
-        {/* <div className=''>
+          <div className='ml-4'>
           <h2 className='text-xl font-bold'>
             Flexibility and options to suit your lifestyle.
           </h2>
@@ -194,8 +194,21 @@ function Cards(props) {
             You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate finder oprion. We provide you the flexibility that you most desire.
           </p>
           <button className='text-white bg-[#F4511E] my-4 p-2 rounded'>Search Rooms</button>
-        </div>        */}
+          </div>
         </div>
+
+        {/* <div className='flex'>
+          
+        <div className=''>
+          <h2 className='text-xl font-bold'>
+            Flexibility and options to suit your lifestyle.
+          </h2>
+          <p>
+            You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate finder oprion. We provide you the flexibility that you most desire.
+          </p>
+          <button className='text-white bg-[#F4511E] my-4 p-2 rounded'>Search Rooms</button>
+        </div>       
+        </div> */}
     </div>
   )
 }
