@@ -190,7 +190,7 @@ function Cards() {
           <h2 className='text-xl font-bold'>
             Flexibility and options to suit your lifestyle.
           </h2>
-          <p>
+          <p className=''>
             You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate finder oprion. We provide you the flexibility that you most desire.
           </p>
           <button className='text-white bg-[#F4511E] my-4 p-2 rounded'>Search Rooms</button>
