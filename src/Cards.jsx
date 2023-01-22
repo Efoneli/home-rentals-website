@@ -3,12 +3,17 @@ import bedroom from './assets/bedroom.png';
 import extHouse from './assets/extHouse.png';
 import couch from './assets/couch.png';
 import couch2 from './assets/couch2.png';
-import couch3 from './assets/couch3.png';
+// import couch3 from './assets/couch3.png';
 import stairs from './assets/stairs.png';
 import stairs2 from './assets/stairs2.png';
 import Size from './assets/Size.svg';
 import Shower from './assets/Shower.svg';
 import Bed from './assets/Bed.svg';
+import happyMan from './assets/happyMan.png';
+import sprayBottle from './assets/sprayBottle.png';
+import friends from './assets/friends.png';
+import arrangeBed from './assets/arrangeBed.png';
+
 
 
 function Cards(props) { 
@@ -158,6 +163,38 @@ function Cards(props) {
                   </div>
                 </div>
             </div>
+        </div>
+
+        <div className='grid place-items-center'>
+          <div className='flex items-center justify-center rounded bg-white w-[25%] border-solid border-2 border-gray-300 m-5'>
+            <p className='text-gray-600 bg-gray-200 border-r-2 p-5'>First</p>
+            <p className='text-orange-500 border-r-2 p-5'>1</p>
+            <p className='text-white bg-orange-400 border-r-2 p-5'>2</p>
+            <p className='text-gray-400 border-r-2 p-5'>3</p>
+            <p className='text-gray-400 p-5'>Next</p>
+          </div>
+        </div>
+
+        <div className='flex'>
+          <div>
+          <div className='m-2 flex'>
+            <img src={arrangeBed} alt='image' className='mr-3 mb-7' />
+            <img src={happyMan} alt='image' className='mr-3 mt-7' />
+          </div>
+          <div className='m-2 flex'>
+            <img src={sprayBottle} alt='image' className='mr-3 mb-7'/>
+            <img src={friends} alt='image' className='mt-9' />
+          </div>
+          </div>
+        {/* <div className=''>
+          <h2 className='text-xl font-bold'>
+            Flexibility and options to suit your lifestyle.
+          </h2>
+          <p>
+            You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate finder oprion. We provide you the flexibility that you most desire.
+          </p>
+          <button className='text-white bg-[#F4511E] my-4 p-2 rounded'>Search Rooms</button>
+        </div>        */}
         </div>
     </div>
   )
