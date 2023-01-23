@@ -16,7 +16,7 @@ import logo from './assets/Logo.png';
 function Footer() { 
     return (
         <div className='mx-11 my-5'>
-            <div className='border-t-2 border-[#F4511E] my-6' >
+            <div className='border-t-2 border-[#F4511E] my-6 mx-4' >
                 <hr />
             </div>
             <div className='flex justify-around items-center mx-11 my-5'>
@@ -82,6 +82,9 @@ function Footer() {
                     <p className='p-4'>HELP</p>
                     <p className='p-4'>PRIVACY POLICY</p>
                     <p className='p-4'>DISCLAIMER</p>
+                </div>
+                <div className='border-t-2 border-[#F4511E] '>
+                    <hr />
                 </div>
                 <div className='text-gray-400'>
                     <p className='p-4'>

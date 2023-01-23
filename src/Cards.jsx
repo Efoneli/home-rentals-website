@@ -175,7 +175,7 @@ function Cards() {
           </div>
         </div>
 
-        <div className='flex m-4'>
+        <div className='grid grid-cols-2 place-items-center m-5'>
         <div className='mr-4'>
           <div className='m-2 flex'>
             <img src={arrangeBed} alt='image' className='mr-3 mb-7' />
@@ -186,12 +186,12 @@ function Cards() {
             <img src={friends} alt='image' className='mt-9' />
           </div>
           </div>
-          <div className='ml-4'>
+          <div className=''>
           <h2 className='text-xl font-bold'>
-            Flexibility and options to suit your lifestyle.
+            Flexibility and options<br/> to suit your lifestyle.
           </h2>
-          <p className=''>
-            You need it? We got it. We make finding your next home easy, comfortable, and simple. From our happiness guarantee to our selective roommate finder oprion. We provide you the flexibility that you most desire.
+          <p className='my-3'>
+            You need it? We got it. We make finding your next <br />home easy, comfortable, and simple. From our <br />happiness guarantee to our selective roommate <br />finder oprion. We provide you the flexibility that you<br /> most desire.
           </p>
           <button className='text-white bg-[#F4511E] my-4 p-2 rounded'>Search Rooms</button>
           </div>
