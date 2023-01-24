@@ -3,6 +3,7 @@ import map from './assets/map.png';
 import LivingCost from './LivingCost.jsx';
 import Cards from './Cards.jsx';
 import Pink from './Pink.jsx';
+import Form from './Form.jsx';
 import Footer from './Footer.jsx';
 import { FiChevronDown, FiSearch } from "react-icons/fi";
 
@@ -50,6 +51,7 @@ function App() {
       </div>
       <LivingCost />
       <Cards />
+      <Form />
       <Pink />
       <Footer />
     </div>
