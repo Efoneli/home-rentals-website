@@ -5,9 +5,11 @@ function Form() {
     <div>
         <div>
             <h2>Add A New Property</h2>
-            <div>
-                
-            </div>
+            <form>
+                <label>Name
+                    <input placeholder='Enter Name' value='text'/>
+                </label>
+            </form>
         </div>
     </div>
   )
