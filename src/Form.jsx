@@ -35,31 +35,64 @@ const Form = () => (
         /* and other goodies */
       }) => (
         <form onSubmit={handleSubmit}>
+          <div className='bg-red-500 flex'>
+          <label>Name<br />
             <input
+            className=''
             type="text"
             name="name"
             placeholder='Enter Name'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
-          />
+          /></label>
           {errors.name && touched.name && errors.name}
+          <label>Address<br />
           <input
             type="email"
             name="email"
+            placeholder='Enter Address'
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.email}
+          /></label>
+          {errors.email && touched.email && errors.email}
+          <label>Unit Number<br />
+          <input
+            type="text"
+            name="text"
+            placeholder='Enter Unit'
+            onChange={handleChange}
+            onBlur={handleBlur}
+            value={values.email}
+          /></label>
+          {errors.email && touched.email && errors.email}
+          </div>
+
+          <label>City</label><br />
+          <select name="city">
+            <option value="Select City">Select City</option>
+          </select>
+          <label>State</label><br />
+          <select name="state">
+            <option value="Select State">Select State</option>
+          </select>
+          <label>Room Type</label><br />
+          <select name="type">
+            <option value="Select Room Type">Select Room Type</option>
+          </select>
+          <input
+            type="number"
+            name="price"
+            placeholder='Enter Price'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
           />
           {errors.email && touched.email && errors.email}
-          <input
-            type="email"
-            name="email"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.email}
-          />
-          {errors.email && touched.email && errors.email}
+          <select name="type">
+            <option value="Select Room Type">Room Type</option>
+          </select>
           <input
             type="password"
             name="password"
