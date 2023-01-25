@@ -69,18 +69,23 @@ const Form = () => (
           {errors.email && touched.email && errors.email}
           </div>
 
-          <label>City</label><br />
+          <div className='bg-green-500 flex'>
+          <label>City<br />
           <select name="city">
             <option value="Select City">Select City</option>
-          </select>
-          <label>State</label><br />
+          </select></label>
+          <label>State<br />
           <select name="state">
             <option value="Select State">Select State</option>
-          </select>
-          <label>Room Type</label><br />
+          </select></label>
+          <label>Room Type<br />
           <select name="type">
             <option value="Select Room Type">Select Room Type</option>
-          </select>
+          </select></label>
+          </div>
+
+          <div className='bg-blue-500 flex'>
+          <label>Price<br />
           <input
             type="number"
             name="price"
@@ -88,21 +93,39 @@ const Form = () => (
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
-          />
+          /></label>
           {errors.email && touched.email && errors.email}
+          <label>Room Type<br />
           <select name="type">
             <option value="Select Room Type">Room Type</option>
-          </select>
-          <input
+          </select></label>
+          </div>
+          <label>Desctiption<br />
+          <textarea 
+          placeholder='Enter Description'
+          name="message" 
+          rows="6" 
+          cols="100">
+          </textarea></label>
+
+          <div>
+          <p>Upload Photos</p>
+          <div>
+            <h2>Drag your images ere, or <span>browse</span></h2>
+            <p>Supposed JPG, JPEG, PNG</p>
+          </div>
+          </div>
+
+          {/* <input
             type="password"
             name="password"
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.password}
           />
-          {errors.password && touched.password && errors.password}
+          {errors.password && touched.password && errors.password} */}
           <button type="submit" disabled={isSubmitting}>
-            Submit
+            Add New Property
           </button>
         </form>
       )}
