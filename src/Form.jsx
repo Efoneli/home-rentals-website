@@ -124,7 +124,8 @@ const Form = () => (
             value={values.password}
           />
           {errors.password && touched.password && errors.password} */}
-          <button type="submit" disabled={isSubmitting}>
+          <button type="submit" disabled={isSubmitting}
+          className='bg-red-500 p-4 m-4'>
             Add New Property
           </button>
         </form>
