@@ -7,8 +7,8 @@ const Form = () => (
       Your Property With Us And Be Confident That Your Room Will Be Out!
     </h1>
     <div className='grid place-content-center'>
-    <div className='bg-yellow-600 rounded grid place-items-center shadow-md shadow-[black] w-[100%]'>
-    <h1 className=''>Add A New Property</h1>
+    <div className='bg-white rounded grid place-items-center shadow-md shadow-[black] w-[100%] p-5 m-4'>
+    <h1 className='text-[#F4511E] font-bold text-xl m-3 p-3'>Add A New Property</h1>
     <Formik
       initialValues={{ email: '', password: '' }}
       validate={values => {
@@ -40,10 +40,10 @@ const Form = () => (
         /* and other goodies */
       }) => (
         <form onSubmit={handleSubmit}>
-          <div className='bg-red-500 flex'>
-          <label>Name<br />
+          <div className='flex'>
+          <label><p className=' font-bold'>Name</p><br />
             <input
-            className=''
+            className='text-sm p-2 mx-3'
             type="text"
             name="name"
             placeholder='Enter Name'
@@ -52,18 +52,20 @@ const Form = () => (
             value={values.email}
           /></label>
           {errors.name && touched.name && errors.name}
-          <label>Address<br />
+          <label><p className=' font-bold'>Address</p><br />
           <input
-            type="email"
-            name="email"
+            className='text-sm p-2 mx-3'
+            type="address"
+            name="address"
             placeholder='Enter Address'
             onChange={handleChange}
             onBlur={handleBlur}
             value={values.email}
           /></label>
-          {errors.email && touched.email && errors.email}
-          <label>Unit Number<br />
+          {errors.address && touched.address && errors.address}
+          <label><p className=' font-bold'>Unit Number</p><br />
           <input
+            className='text-sm p-2 mx-3 border border-zinc-400'
             type="text"
             name="text"
             placeholder='Enter Unit'
@@ -74,7 +76,7 @@ const Form = () => (
           {errors.email && touched.email && errors.email}
           </div>
 
-          <div className='bg-green-500 flex'>
+          <div className='flex'>
           <label>City<br />
           <select name="city">
             <option value="Select City">Select City</option>
@@ -89,7 +91,7 @@ const Form = () => (
           </select></label>
           </div>
 
-          <div className='bg-blue-500 flex'>
+          <div className='flex'>
           <label>Price<br />
           <input
             type="number"
@@ -113,9 +115,9 @@ const Form = () => (
           cols="100">
           </textarea></label>
 
-          <div>
+          <div className='font-bold'>
           <p>Upload Photos</p>
-          <div>
+          <div className='border border-dashed border-[#F4511E]'>
             <h2>Drag your images ere, or <span>browse</span></h2>
             <p>Supposed JPG, JPEG, PNG</p>
           </div>
