@@ -109,24 +109,26 @@ const Form = () => (
           </div>
           <label>Description<br />
           <textarea 
-          className=' border border-zinc-400 p-2'
+          className=' border border-zinc-200 rounded p-2 bg-zinc-100'
           placeholder='Enter Description'
           name="message" 
           rows="6" 
           cols="100">
           </textarea></label>
 
-          <div className='font-bold'>
-          <p>Upload Photos</p>
-          <div className='border border-dashed border-[#F4511E]'>
-            <h2>Drag your images ere, or <span>browse</span></h2>
-            <p>Supposed JPG, JPEG, PNG</p>
+          <p className='font-bold my-2'>Upload Photos</p>
+          <div className='grid place-items-center '>
+
+          <div className='grid place-items-center w-full border border-dashed border-[#F4511E] rounded p-3'>
+            <h2>Drag your images ere, or <span className='text-[#F4511E]'>browse</span></h2>
+            <p className='text-zinc-400 text-sm'>Supposed JPG, JPEG, PNG</p>
           </div>
-          </div>
+          
           <button type="submit" disabled={isSubmitting}
-          className='bg-red-500 p-4 m-4'>
+          className='bg-[#F4511E] rounded px-12 py-2 text-white m-4 '>
             Add New Property
           </button>
+          </div>
         </form>
       )}
     </Formik>
