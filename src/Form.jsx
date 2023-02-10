@@ -43,7 +43,7 @@ const Form = () => (
           <div className='flex'>
           <label><p className=' font-bold'>Name</p><br />
             <input
-            className='text-sm p-2 mx-3'
+            className='text-sm p-2 mx-3 border border-zinc-400 rounded'
             type="text"
             name="name"
             placeholder='Enter Name'
@@ -54,7 +54,7 @@ const Form = () => (
           {errors.name && touched.name && errors.name}
           <label><p className=' font-bold'>Address</p><br />
           <input
-            className='text-sm p-2 mx-3'
+            className='text-sm p-2 mx-3 border border-zinc-400 rounded'
             type="address"
             name="address"
             placeholder='Enter Address'
@@ -65,7 +65,7 @@ const Form = () => (
           {errors.address && touched.address && errors.address}
           <label><p className=' font-bold'>Unit Number</p><br />
           <input
-            className='text-sm p-2 mx-3 border border-zinc-400'
+            className='text-sm p-2 mx-3 border border-zinc-400 rounded bg-zinc-100'
             type="text"
             name="text"
             placeholder='Enter Unit'
@@ -107,8 +107,9 @@ const Form = () => (
             <option value="Select Room Type">Room Type</option>
           </select></label>
           </div>
-          <label>Desctiption<br />
+          <label>Description<br />
           <textarea 
+          className=' border border-zinc-400 p-2'
           placeholder='Enter Description'
           name="message" 
           rows="6" 
