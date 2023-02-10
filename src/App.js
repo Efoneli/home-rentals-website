@@ -51,7 +51,7 @@ function App() {
       </div>
       <LivingCost />
       <Cards />
-      <Form />
+      {/* <Form /> */}
       <Pink />
       <Footer />
     </div>

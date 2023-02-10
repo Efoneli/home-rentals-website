@@ -2,7 +2,7 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const Form = () => (
-  <div className='m-10 grid place-content-center'>
+  <div className='m-10 grid place-content-center bg-blue-600'>
     <h1 className='font-bold m-4'>
       Your Property With Us And Be Confident That Your Room Will Be Out!
     </h1>
