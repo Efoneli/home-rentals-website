@@ -2,12 +2,12 @@ import React from 'react';
 import { Formik } from 'formik';
 
 const Form = () => (
-  <div className='m-10 grid place-content-center bg-blue-600'>
+  <div className='m-10 grid place-content-center'>
     <h1 className='font-bold m-4'>
       Your Property With Us And Be Confident That Your Room Will Be Out!
     </h1>
     <div className='grid place-content-center'>
-    <div className='bg-white rounded grid place-items-center shadow-md shadow-[black] w-[100%] p-5 m-4'>
+    <div className='bg-white rounded grid place-items-center shadow-md shadow-[#252525] w-[100%] p-5 m-4'>
     <h1 className='text-[#F4511E] font-bold text-xl m-3 p-3'>Add A New Property</h1>
     <Formik
       initialValues={{ email: '', password: '' }}
@@ -41,7 +41,7 @@ const Form = () => (
       }) => (
         <form onSubmit={handleSubmit}>
           <div className='flex'>
-          <label><p className=' font-bold'>Name</p><br />
+          <label><p className='px-3 font-bold'>Name</p><br />
             <input
             className='text-sm p-2 mx-3 border border-zinc-400 rounded'
             type="text"
@@ -52,7 +52,7 @@ const Form = () => (
             value={values.email}
           /></label>
           {errors.name && touched.name && errors.name}
-          <label><p className=' font-bold'>Address</p><br />
+          <label><p className='px-3 font-bold'>Address</p><br />
           <input
             className='text-sm p-2 mx-3 border border-zinc-400 rounded'
             type="address"
@@ -63,7 +63,7 @@ const Form = () => (
             value={values.email}
           /></label>
           {errors.address && touched.address && errors.address}
-          <label><p className=' font-bold'>Unit Number</p><br />
+          <label><p className='px-3 font-bold'>Unit Number</p><br />
           <input
             className='text-sm p-2 mx-3 border border-zinc-400 rounded bg-zinc-100'
             type="text"
@@ -77,22 +77,22 @@ const Form = () => (
           </div>
 
           <div className='flex'>
-          <label>City<br />
+          <label><p className='px-3 font-bold'>City</p><br />
           <select name="city">
-            <option value="Select City">Select City</option>
+            <option value="Select City"><p className='px-3 font-bold '>Select City</p></option>
           </select></label>
-          <label>State<br />
+          <label><p className='px-3 font-bold'>state</p><br />
           <select name="state">
-            <option value="Select State">Select State</option>
+            <option value="Select State"><p className='px-3 font-bold'>Select State</p></option>
           </select></label>
-          <label>Room Type<br />
+          <label><p className='px-3 font-bold'>Room Type</p><br />
           <select name="type">
-            <option value="Select Room Type">Select Room Type</option>
+            <option value="Select Room Type"><p className='px-3 font-bold'>Select Room Type</p></option>
           </select></label>
           </div>
 
           <div className='flex'>
-          <label>Price<br />
+          <label><p className='px-3 font-bold'>Price</p><br />
           <input
             type="number"
             name="price"
@@ -102,7 +102,7 @@ const Form = () => (
             value={values.email}
           /></label>
           {errors.email && touched.email && errors.email}
-          <label>Room Type<br />
+          <label><p className='px-3 font-bold'>Room Type</p><br />
           <select name="type">
             <option value="Select Room Type">Room Type</option>
           </select></label>
@@ -123,15 +123,6 @@ const Form = () => (
             <p>Supposed JPG, JPEG, PNG</p>
           </div>
           </div>
-
-          {/* <input
-            type="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-          />
-          {errors.password && touched.password && errors.password} */}
           <button type="submit" disabled={isSubmitting}
           className='bg-red-500 p-4 m-4'>
             Add New Property
