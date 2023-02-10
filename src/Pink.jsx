@@ -1,10 +1,12 @@
 import React from "react";
 import chairs from "./assets/chairs.jpg";
+import Elipse from "./assets/Ellipse.png";
+
 
 function Pink() {
   return (
-    <div className=" flex bg-green-500 h-screen">
-      <div>
+    <div className=" flex bg-green-500">
+      <div className="grid place-items-center">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
           interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
@@ -13,8 +15,8 @@ function Pink() {
           faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
           fringilla finibus.
         </p>
-        <div>
-          <img src="Elipse" alt="elipse" />
+        <div className="flex ">
+          <img src={Elipse} alt="elipse" />
           <div className="">
             <h1>Harry Wilson</h1>
             <p>Property Owner</p>
