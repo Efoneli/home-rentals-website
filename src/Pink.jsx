@@ -5,7 +5,8 @@ import chairs from './assets/chairs.jpg'
 function Pink() {
   return (
     <div className=' flex bg-green-500 h-screen'>
-                    <p>
+        <div>
+            <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel pellentesque est. Curabitur at odio sit amet libero vulputate efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa, faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus fringilla finibus.
             </p>
             <div>
@@ -16,6 +17,7 @@ function Pink() {
                 </div>
             </div>
             <img src={chairs} alt='chair' />
+        </div>
     </div>
   )
 }
