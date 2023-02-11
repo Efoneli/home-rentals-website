@@ -1,11 +1,12 @@
 import React from "react";
 import chairs from "./assets/chairs.jpg";
 import Elipse from "./assets/Ellipse.png";
+import play from "./assets/play-button.png";
 
 
 function Pink() {
   return (
-    <div className="bg-[url('./')] flex bg-pink-50">
+    <div className=" flex items-center justify-center bg-pink-50">
       <div className="flex justify-center flex-col p-6">
         <p className="p-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
@@ -23,7 +24,10 @@ function Pink() {
           </div>
         </div>
       </div>
-      <img src={chairs} alt="chair" />
+      <div className="relative top-0 left-0">
+      <img src={chairs} alt="chair" className="relative top-0 left-0" />
+      <img src={play} alt="chair" className="absolute top-20 left-20" />
+      </div>
     </div>
   );
 }
