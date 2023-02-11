@@ -6,14 +6,14 @@ import play from "./assets/play-button.png";
 
 function Pink() {
   return (
-    <div className=" flex items-center justify-center bg-pink-50">
-      <div className="flex justify-center flex-col p-6">
-        <p className="p-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-          interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel
-          pellentesque est. Curabitur at odio sit amet libero vulputate
-          efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam massa,
-          faucibus id pretium ac, mattis eu velit. Donec sed risus a lacus
+    <div className=" flex justify-between bg-pink-50">
+      <div className="flex justify-center flex-col px-6">
+        <p className="px-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br/>
+          interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel <br/>
+          pellentesque est. Curabitur at odio sit amet libero vulputate<br/>
+          efficitur ac nec justo. Nulla vitae mauris quam. Nulla quam <br/>massa,
+          faucibus id pretium ac, mattis eu velit. Donec sed risus <br/> a lacus
           fringilla finibus.
         </p>
         <div className="flex p-2">
@@ -25,8 +25,8 @@ function Pink() {
         </div>
       </div>
       <div className="relative top-0 left-0">
-      <img src={chairs} alt="chair" className="relative top-0 left-0" />
-      <img src={play} alt="chair" className="absolute top-20 left-20" />
+      <img src={chairs} alt="chair" className="relative top-0 left-0 opacity-70" />
+      <img src={play} alt="chair" className="absolute top-60 left-80" />
       </div>
     </div>
   );
