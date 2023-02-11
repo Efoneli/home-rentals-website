@@ -6,7 +6,7 @@ import play from "./assets/play-button.png";
 
 function Pink() {
   return (
-    <div className=" flex justify-between bg-pink-50">
+    <div className=" flex justify-between my-16 bg-pink-50">
       <div className="flex justify-center flex-col px-6">
         <p className="px-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br/>
