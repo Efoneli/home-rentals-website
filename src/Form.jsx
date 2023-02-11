@@ -75,11 +75,10 @@ const Form = () => (
           /></label>
           {errors.email && touched.email && errors.email}
           </div>
-
           <div className='flex'>
           <label><p className='px-3 font-bold'>City</p><br />
           <select name="city">
-            <option value="Select City"><p className='px-3 font-bold '>Select City</p></option>
+            <option value="Select City"><p className='px-3 font-bold w-full h-7 bg-red-400  border border-zinc-400 rounded bg-zinc-100'>Select City</p></option>
           </select></label>
           <label><p className='px-3 font-bold'>state</p><br />
           <select name="state">
@@ -94,6 +93,7 @@ const Form = () => (
           <div className='flex'>
           <label><p className='px-3 font-bold'>Price</p><br />
           <input
+            className='text-sm p-2 mx-3 border border-zinc-400 rounded bg-zinc-100'
             type="number"
             name="price"
             placeholder='Enter Price'
@@ -120,7 +120,7 @@ const Form = () => (
           <div className='grid place-items-center '>
 
           <div className='grid place-items-center w-full border border-dashed border-[#F4511E] rounded p-3'>
-            <h2>Drag your images ere, or <span className='text-[#F4511E]'>browse</span></h2>
+            <h2>Drag your images here, or <span className='text-[#F4511E]'>browse</span></h2>
             <p className='text-zinc-400 text-sm'>Supposed JPG, JPEG, PNG</p>
           </div>
           
