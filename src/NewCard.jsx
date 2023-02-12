@@ -1,10 +1,10 @@
 import React from 'react'
 
-const NewCard = ({ url, title, type, rate }) => {
+const NewCard = ({ image, title, type, rate }) => {
   return (
     <div>
         <div>
-            <img src={url} alt='photo' />
+            <img src={image} alt={image} />
         </div>
         <h2>{title}</h2>
         <h3>{type}</h3>
