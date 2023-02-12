@@ -7,6 +7,7 @@ import Form from './Form.jsx';
 import Footer from './Footer.jsx';
 import { FiChevronDown, FiSearch } from "react-icons/fi";
 import NewCard from './NewCard';
+import data from './data';
 
 
 function App() {
@@ -51,10 +52,10 @@ function App() {
       </div>
       </div>
       <LivingCost />
-      {Data.map(NewCard =>
+      {data.map(newCard =>
         <NewCard
-        {...NewCard}
-        key={Data.id}
+        {...newCard}
+        key={data.id}
         />
         )}
       {/* <NewCard /> */}
