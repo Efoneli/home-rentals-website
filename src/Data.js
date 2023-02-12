@@ -8,35 +8,35 @@ import stairs from './assets/stairs.png';
  const data = [
 {
     id:'1',
-    image:'bedroom',
+    image:bedroom,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
 },
 {
     id:'2',
-    image:'extHouse',
+    image:extHouse,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
  },
 {
     id:'3',
-    image:'couch',
+    image:couch,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
 },
 {
     id:'4',
-    image:'couch2',
+    image:couch2,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
 },
 {
     id:'5',
-    image:'couch3',
+    image:couch3,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
@@ -44,7 +44,7 @@ import stairs from './assets/stairs.png';
 
 {
     id:'6',
-    image:'stairs',
+    image:stairs,
     title:'2578 Folsom Street, San Francisco, CA, 94110',
     type:'Private Room',
     rate:'1200/Month'
