@@ -6,6 +6,7 @@ import Pink from './Pink.jsx';
 import Form from './Form.jsx';
 import Footer from './Footer.jsx';
 import { FiChevronDown, FiSearch } from "react-icons/fi";
+import NewCard from './NewCard';
 
 
 function App() {
@@ -50,7 +51,14 @@ function App() {
       </div>
       </div>
       <LivingCost />
-      <Cards />
+      {Data.map(NewCard =>
+        <NewCard
+        {...NewCard}
+        key={Data.id}
+        />
+        )}
+      {/* <NewCard /> */}
+      {/* <Cards /> */}
       <Form />
       <Pink />
       <Footer />
