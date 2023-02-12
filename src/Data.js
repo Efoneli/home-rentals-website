@@ -1,6 +1,3 @@
-
-
-import Cards from './Cards';
 import bedroom from './assets/bedroom.png';
 import extHouse from './assets/extHouse.png';
 import couch from './assets/couch.png';
