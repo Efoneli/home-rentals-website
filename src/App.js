@@ -10,6 +10,7 @@ import NewCard from './NewCard';
 import data from './data';
 
 
+
 function App() {
   return (
     <div className=''>
@@ -59,7 +60,7 @@ function App() {
         />
         )}
       {/* <NewCard /> */}
-      {/* <Cards /> */}
+      <Cards />
       <Form />
       <Pink />
       <Footer />

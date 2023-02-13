@@ -13,6 +13,7 @@ import happyMan from './assets/happyMan.png';
 import sprayBottle from './assets/sprayBottle.png';
 import friends from './assets/friends.png';
 import arrangeBed from './assets/arrangeBed.png';
+import NewCard from './NewCard';
 
 
 
@@ -25,7 +26,9 @@ function Cards() {
             View All Property
           </button>
         </div>
-        <div className='container grid gap-2 place-items-center lg:grid-cols-3  md:grid-cols-3 sm:grid-cols-1'>
+
+        {/* <NewCard /> */}
+        {/* <div className='container grid gap-2 place-items-center lg:grid-cols-3  md:grid-cols-3 sm:grid-cols-1'>
             <div className='bg-white h-[1/3] w-[53.3vh] rounded-3xl my-5 shadow-lg shadow-black'>
                 <img src={bedroom} alt='bedroom' className='object-cover'/>
                 <h2 className='font-bold text-xl py-2 px-3'>
@@ -163,7 +166,7 @@ function Cards() {
                   </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         <div className='grid place-items-center'>
           <div className='flex items-center justify-center rounded bg-white w-[25%] border-solid border-2 border-gray-300 m-5'>
