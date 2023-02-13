@@ -174,12 +174,12 @@ function Cards() {
         <div className='grid grid-cols-2 place-items-center my-10'>
         <div className='mr-4'>
           <div className='m-2 flex'>
-            <img src={arrangeBed} alt='image' className='mr-3 mb-7' />
-            <img src={happyMan} alt='image' className='mr-3 mt-7' />
+            <img src={arrangeBed} alt='pic' className='mr-3 mb-7' />
+            <img src={happyMan} alt='pic' className='mr-3 mt-7' />
           </div>
           <div className='m-2 flex'>
-            <img src={sprayBottle} alt='image' className='mr-3 mb-7'/>
-            <img src={friends} alt='image' className='mt-9' />
+            <img src={sprayBottle} alt='pic' className='mr-3 mb-7'/>
+            <img src={friends} alt='pic' className='mt-9' />
           </div>
           </div>
           <div className=''>

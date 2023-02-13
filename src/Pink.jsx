@@ -8,7 +8,7 @@ function Pink() {
   return (
     <div className=" flex justify-between my-16 bg-pink-50">
       <div className="flex justify-center flex-col px-6">
-        <p className="px-4">
+        <p className="px-4 bg-[url('./assets/quote.png')] bg-no-repeat bg-opacity-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam <br/>
           interdum nisl et nunc facilisis, a commodo eros mollis. Nunc vel <br/>
           pellentesque est. Curabitur at odio sit amet libero vulputate<br/>
