@@ -8,7 +8,7 @@ const NewCard = ({ image, title, type, rate }) => {
   return (
     <div className=' card mx-11'>    
         
-    <div className="flex flex-col justify-center items-center">
+    <div className="">
       <div className="bg-white h-[1/3] w-[53.3vh] rounded-3xl my-5 shadow-lg shadow-black">
         <div>
           <img src={image} alt={image} className="object-cover" />

@@ -53,12 +53,23 @@ function App() {
       </div>
       </div>
       <LivingCost />
+      <div className='mx-11'>
+      <div className='flex justify-between my-6 '>
+          <h1 className='text-2xl font-bold'>List Of Properties</h1>
+          <button className='bg-orange-700 text-white text-sm rounded-sm px-3 py-2'>
+            View All Property
+          </button>
+        </div>
+
+      <div className='container grid gap-2 place-items-center lg:grid-cols-3  md:grid-cols-3 sm:grid-cols-1'>
       {data.map(newCard =>
         <NewCard
         {...newCard}
         key={data.id}
         />
         )}
+        </div>
+        </div>
       {/* <NewCard /> */}
       <Cards />
       <Form />

@@ -13,20 +13,13 @@ import happyMan from './assets/happyMan.png';
 import sprayBottle from './assets/sprayBottle.png';
 import friends from './assets/friends.png';
 import arrangeBed from './assets/arrangeBed.png';
-import NewCard from './NewCard';
 
 
 
 function Cards() { 
   return (
     <div className='mx-11'>
-        <div className='flex justify-between my-6 '>
-          <h1 className='text-2xl font-bold'>List Of Properties</h1>
-          <button className='bg-orange-700 text-white text-sm rounded-sm px-3 py-2'>
-            View All Property
-          </button>
-        </div>
-
+        
         {/* <NewCard /> */}
         {/* <div className='container grid gap-2 place-items-center lg:grid-cols-3  md:grid-cols-3 sm:grid-cols-1'>
             <div className='bg-white h-[1/3] w-[53.3vh] rounded-3xl my-5 shadow-lg shadow-black'>
@@ -168,7 +161,7 @@ function Cards() {
             </div>
         </div> */}
 
-        <div className='grid place-items-center'>
+        <div className='grid place-items-center my-10'>
           <div className='flex items-center justify-center rounded bg-white w-[25%] border-solid border-2 border-gray-300 m-5'>
             <p className='text-gray-600 bg-gray-200 border-r-2 p-5'>First</p>
             <p className='text-orange-500 border-r-2 p-5'>1</p>
@@ -178,7 +171,7 @@ function Cards() {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 place-items-center m-5'>
+        <div className='grid grid-cols-2 place-items-center my-10'>
         <div className='mr-4'>
           <div className='m-2 flex'>
             <img src={arrangeBed} alt='image' className='mr-3 mb-7' />
